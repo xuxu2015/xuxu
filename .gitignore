@@ -61,3 +61,6 @@ $RECYCLE.BIN/
 .settings/*.*
 build/classes/*.*
 build/*.*
+.mymetadata
+*/classes/*.*
+WebContent/WEB-INF/classes/*.*

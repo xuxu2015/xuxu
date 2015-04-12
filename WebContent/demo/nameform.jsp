@@ -8,7 +8,7 @@
 </head>
 <body>
 	<form action="/xuxu/demo/welcome.action" method="post">
-		<input name="name"> <input type="submit" value="submit">
+		<input name="user.name"> <input type="submit" value="submit">
 	</form>
 </body>
 </html>
