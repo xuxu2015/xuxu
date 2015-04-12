@@ -4,7 +4,7 @@
 .mtj.tmp/
 
 # Package Files #
-
+*.classpath
 *.war
 *.ear
 
