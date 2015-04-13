@@ -5,7 +5,7 @@ import demo.entity.User;
 public class WelcomeAction {
 	//private String name;
 
-	private User user;
+	private User user = new User();
 	public String execute() {
 		if ("monster".equalsIgnoreCase(user.getName())) {
 			return "fail";
