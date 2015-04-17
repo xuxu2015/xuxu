@@ -9,8 +9,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>登录</title>
-		<script type="text/javascript" src="<%=path%>/js/jquery-2.1.1.js"></script>
-		<script type="text/javascript" src="<%=path%>/js/login/login.js"></script>
+		
 		<link rel="stylesheet" type="text/css" href="<%=path%>/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="<%=path%>/css/login/login.css">
 	</head>
@@ -30,15 +29,15 @@
 						<form action="<%=path%>/login/login.action" method="post">
 							<ul>
 								<li>
-									用户名：
+									<label class="item">用户名：</label>
 									<input name="user.name" />
 								</li>
 								<li>
-									密&nbsp;&nbsp;码：
+									<label class="item">密&nbsp;&nbsp;码：</label>
 									<input type="password" name="user.pwd" />
 								</li>
 								<li>
-									验证码：
+									<label class="item">验证码：</label>
 									<input size="10" id="verifyCode" name="verifyCode"/>
 									<span><img src="<%=path%>/common/verifyCode" id='img_verifyCode'/></span>
 								</li>
@@ -53,6 +52,7 @@
 				<div id="right"></div>
 			</div>
 			<%@include file="/jsp/common/bottom.jsp"%>
+			<script type="text/javascript" src="<%=path%>/js/login/login.js"></script>
 		</div>
 	</body>
 </html>
