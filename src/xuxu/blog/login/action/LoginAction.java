@@ -1,25 +1,18 @@
-package demo.action;
+package xuxu.blog.login.action;
 
-import demo.entity.User;
+import xuxu.blog.common.action.BaseAction;
+import xuxu.blog.entity.User;
 
-public class WelcomeAction {
-	//private String name;
+public class LoginAction extends BaseAction {
 
 	private User user = new User();
+
 	public String execute() {
 		if ("monster".equalsIgnoreCase(user.getName())) {
 			return "fail";
 		}
 		return "success";
 	}
-
-//	public String getName() {
-//		return name;
-//	}
-//
-//	public void setName(String name) {
-//		this.name = name;
-//	}
 
 	public User getUser() {
 		return user;

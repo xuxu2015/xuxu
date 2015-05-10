@@ -9,4 +9,11 @@
 			<result name="fail">/demo/nameform.jsp</result>
 		</action>
 	</package>
+	<package name="common" extends="struts-default" namespace="/common">
+		<action name="verifyCode" class="xuxu.blog.common.action.VerifyCodeAction">
+			<result type="stream">
+				<param name="inputName">imageStream</param>
+			</result>
+		</action>
+	</package>
 </struts>
